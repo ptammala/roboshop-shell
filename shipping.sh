@@ -12,7 +12,9 @@ cd /app
 unzip /tmp/shipping.zip
 
 
-
+cd /app
+mvn clean package
+mv target/shipping-1.0.jar shipping.jar
 
 systemctl daemon-reload
 
